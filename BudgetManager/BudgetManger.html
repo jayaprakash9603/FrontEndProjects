@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BudgetManager.css">
+    <title>Budget Manager</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Manager</h1>
+        <div class="add-expense">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+        <div class="expense-list">
+            <ul id="expenses">
+                <!-- Expense items will be added here -->
+            </ul>
+        </div>
+    </div>
+    <script src="BudgetManager.js"></script>
+</body>
+</html>

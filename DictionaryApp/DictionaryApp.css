@@ -1,0 +1,102 @@
+:root {
+  --header-color: #008080;
+  --background-color: #f5f5f5;
+  --padding: 20px;
+  --text-color: #fff;
+  --border-radius: 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  width: 100vw;
+}
+header {
+  background-color: var(--header-color);
+  padding: var(--padding);
+  color: var(--text-color);
+}
+header h1 {
+  font-size: 36px;
+}
+main {
+  height: 78vh;
+  padding: var(--padding);
+  max-width: 800px;
+  margin: 0 auto;
+}
+main form {
+  display: flex;
+  justify-content: center;
+}
+form input[type="text"],
+button[type="submit"],
+.result div a {
+  border: none;
+  font: 16px;
+  font-weight: 500;
+  border-radius: var(--border-radius);
+  padding: calc(20px / 2);
+}
+
+form input[type="text"] {
+  flex-grow: 1;
+}
+form button[type="submit"] {
+  background-color: var(--header-color);
+  color: var(--text-color);
+  margin-left: 10px;
+  cursor: pointer;
+}
+footer {
+  background-color: var(--header-color);
+  color: var(--text-color);
+  padding: var(--padding);
+  text-align: center;
+  font-size: 18px;
+  position: fixed;
+  width: 100%;
+}
+.result {
+  background-color: white;
+
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.result p {
+  margin-top: 10px;
+}
+.result p[class="partOfSpeech"] {
+  font-style: italic;
+
+  color: #808080;
+  margin-top: 2px;
+}
+.result div a {
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: var(--header-color);
+  color: var(--text-color);
+}
+.result div {
+  margin-top: 20px;
+}
+.result li {
+  padding: calc(var(--padding) / 6);
+  margin-left: 20px;
+}
+@media screen and (max-width: 320px) {
+  main form {
+    flex-direction: column;
+  }
+  form button[type="submit"] {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
